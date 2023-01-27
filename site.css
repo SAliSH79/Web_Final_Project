@@ -1,0 +1,222 @@
+body{
+    height: 100%;
+}
+.header{
+    background-repeat: no-repeat; /* Showing the background image only once */
+    background-image: url(img/Header.jpg); /* background image setting */
+    height: 33%; 
+    width: 100%;
+    background-size: cover;  /* Resize the background image to cover the entire container 
+	even if it has to stretch the image or cut a little bit off one of the edges */
+	
+}
+h1 {
+  color: white;
+  margin-left: 30%; 
+  margin-top: 0%;
+  width: 452px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Sans-serif;
+} 
+ /* Setting up features for header 1 and 3*/
+h3 {
+  color: white;
+  border: none;
+  margin-left: 5%;
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Sans-serif;
+
+} 
+ /* ------------------------------------------------------------------------------------ */
+.div-Main{
+    width: 100%;
+    background-color: #8080801f;
+    display: flex;
+	background-image: url(img/background.jpg)
+} /* Setting up features for cards and main part of code*/
+.header-card{
+    border-radius: 11px;
+    color: blue;
+    text-align: center;
+    padding: 18px;
+    border-bottom: 1px solid #080505;
+}
+ /* ------------------------------------------------------------------------------------ */
+.div-Main2{
+
+    width: 100%;
+    background-color: #8080801f;
+    display: flex;
+}
+.footer{
+    direction: left;
+    display: flex; /* Setting up features for footers*/
+    width: 99%;
+    height: 100px;
+    background-color: black;
+    padding: 10px;
+}
+
+.lifooter{
+    list-style: none;
+    margin: 2px;
+    color: white;  /* Setting up features for footers*/
+    font-size: 19px;
+    border-top: 1px solid gray;
+    padding: 1px;
+    cursor: pointer;
+}
+.card{
+    width: 20%;
+    /* height: 262px; */
+    background-color: white;
+    /* margin: 3%; */
+    margin-top: 40px;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 11px;     /* Setting up features for cards*/
+	margin-bottom: 20px;
+}
+
+ /* ------------------------------------------------------------------------------------ */
+.card2{
+    width: 20%;
+    height: 50%;
+    background-color: white;
+    /* margin: 3%; */
+    margin-top: 20px;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 11px;
+}
+.card2  p :hover + .spanhide{
+ display: inline;
+}
+.Modal{
+    height: 300px;
+    width: 300px;
+    background-color: brown;
+    display: none;
+}
+ /* ------------------------------------------------------------------------------------ */
+.div-search{ /* this class determinds the input search Icon */
+    width: 100%;
+    height: 20%;
+}
+.input-search{    /* this class determinds the input search Icon */
+    margin-left: 35%; 
+    margin-top: 0%;
+    width: 452px;
+    /* height: 30px; */
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    font-family: Sans-serif;
+}
+.div-icon{
+    float: right;  /* the float property can be used to wrap text around images */
+    width: 32px;
+    height: 28px;
+    /* background-color: white; */
+    margin-top: 19px;
+    margin-right: 44px;
+    background-color: rgb(255, 255, 255);
+    padding: 6px;
+    border-radius: 50%;
+    padding-top: 11px;
+    cursor: pointer;
+}
+ /* ------------------------------------------------------------------------------------ */
+.icon{
+    width: 27px;
+    height: 4px;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+.img-card{
+    width: 134px;
+    height: 134px;
+    margin-left: 33%;
+    border-radius: 50%;
+}
+.img-card2{  /* this class is for Books properties */
+    width: 100%;
+    height: 339px;
+    border-radius: 10%;
+	margin: 2px;
+	margin-left: 28px;
+}
+
+.hide {
+    padding-top: 10px; /* this class is for Books properties */
+    margin-bottom: 65px;
+    text-align: center;
+	margin-left: 18px;
+}
+  
+  
+  .myDIV:hover + .hide {
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 2px;
+  }
+
+  .divsell{
+    display: flex;
+  }
+  @media screen and (max-width: 600px) {
+    .div-Main {
+        width: 100%;
+        background-color: #8080801f;
+        display: block;
+        /* display: flex; */
+    }
+    .card {
+        width: 100%;
+        /* height: 262px; */
+        background-color: white;
+        /* margin: 3%; */
+        margin-top: 20px;
+        /* margin-right: 1%; */
+        margin-left: 1%;
+        padding: 11px;
+    }
+    .input-search {
+        margin-left: 23%;
+        top: 100;
+        margin-top: 12%;
+        width: 268px;
+        /* height: 30px; */
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        text-align: right;
+        padding: 13px;
+        font-family: system-ui;
+    }
+    .divsell{
+        display: block;
+        width: 100%;
+      }
+      .hide {
+        padding-top: 10px;
+        margin-bottom: 65px;
+        text-align: right;
+        padding-right: 21px;
+    }
+    .img-card2 {
+        width: 95%;
+        height: 135px;
+        border-radius: 1%;
+    }
+  }
